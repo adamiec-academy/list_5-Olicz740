@@ -8,7 +8,5 @@ def longest_word():
         if len(word) > largestLen:
             largestLen = len(word)
             largestWord = word
-        else:
-            continue
     return largestWord
 print(longest_word())
