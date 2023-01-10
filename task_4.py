@@ -5,6 +5,6 @@ def reversed_words():
         words.add(line.strip())
     for word in words:
        if word[::-1] in words:
-           r_words.append((word and word[::-1]))
+           r_words.append((word, word[::-1]))
     r_words.sort()
     return r_words
