@@ -8,4 +8,3 @@ def reversed_words():
            r_words.append((word and word[::-1]))
     r_words.sort()
     return r_words
-print(reversed_words())
