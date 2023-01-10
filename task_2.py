@@ -1,6 +1,6 @@
 def unique(data):
     data_unique = []
-    set_1 = set(data)
-    for i in set_1:
+    elements = set(data)
+    for i in elements:
         data_unique.append(i)
     return data_unique
