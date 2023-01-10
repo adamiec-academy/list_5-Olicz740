@@ -8,7 +8,7 @@ def reversed_words():
    
     for word in words:
         if word[::-1] in words and (word, word[::-1]) not in r_words and word[::-1] != word:
-             r_words.append(sorted((word, word[::-1])))
+            r_words.append(tuple(sorted((word, word[::-1]))))
         
     r_words.sort()
     
