@@ -7,7 +7,7 @@ def reversed_words():
         words.add(line.strip())
    
     for word in words:
-        if word[::-1] in words and (word, word[::-1]) not in r_words and word[::-1] != word:
+        if word[::-1] in words and tuple((word, word[::-1])) not in r_words and word[::-1] != word:
             r_words.append(tuple(sorted((word, word[::-1]))))
         
     r_words.sort()
